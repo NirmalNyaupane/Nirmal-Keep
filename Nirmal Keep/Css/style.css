@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* Making root element */
+:root{
+    --privary-color:#f8d301;
+    --font-color:#000000;
+}
+
+body{
+    background-color: aliceblue;
+}
+.head-part{
+    background-color: var(--privary-color);
+    font-family:'Roboto', sans-serif;
+    color:var(--font-color);
+    font-size: 25px;
+    font-weight: bold;
+    padding:15px 0px;
+    box-shadow:2px 2px 5px rgb(221, 221, 221);
+}
+.logo{
+    margin-left: 20px;
+}
+
+.logo i{
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+/* btn styling */
+.main-part{
+    position: relative;
+    margin-top:30px;
+}
+.btn, .note-add-btn{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.add-btn{
+    position: absolute;
+    right: 100px;
+}
+.btn{
+    /* width: 10px; */
+    background-color: var(--privary-color);
+    padding:10px 15px;
+    cursor:pointer;
+    box-shadow:5px 5px 5px rgb(221, 221, 221);
+    border-radius: 50%;
+    overflow: show;
+}
+
+.container{ 
+    margin-left: 20px; 
+    display: flex;
+    gap:3.5em;
+    flex-wrap: wrap;
+    margin-top:100px;
+}
+
+.box-part{
+    border:1px solid #ffffff;
+    width: 400px;
+    margin-top:20px;
+    overflow: auto;
+    background-color: #ffffff;
+    height: 250px;
+    box-shadow:2px 2px 5px rgb(221, 221, 221);
+}
+
+textarea,
+.content-add{
+    width: 80%;
+    height: 80%;
+    resize: none;
+    border: none;
+    padding:15px 5px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+}
+#note-heading{
+    font-size:18px;
+    width: 80%;
+    padding:5px 5px;
+    border:none;
+}
+textarea:focus,
+#note-heading:focus{
+    outline: none;
+    border:none;
+}
+.fa-trash, 
+.fa-pen-to-square,
+.fa-floppy-disk{
+    box-shadow:3px 3px 5px rgb(221, 221, 221);
+    font-size: 18px;
+    border-radius: 50%;
+    margin:5px;
+    cursor: pointer;
+}
+
+.fa-trash:hover,
+.fa-pen-to-square:hover,
+.fa-floppy-disk
+{
+    background-color: white;
+    color:black;
+    transition: all .2s linear;
+}
+.fa-trash{
+    background-color: red;
+    padding:9px;
+    color:white;
+}
+.fa-pen-to-square,
+.fa-floppy-disk
+{
+    background-color: green;
+    padding:9px;
+    color:white;
+}
+.box-icon{
+    text-align: right;
+    margin:5px 5px 0px 0px;
+}
+
+.show-heading{
+    font-size: 1.2rem;
+}
+/* appling hiding and showing logic */
+.hidden{
+    display: none;
+}
+.show-para{
+    margin-top: 15px;
+}
+.active{
+    position: fixed;
+    top:5px;
+    left: 5px;
+}

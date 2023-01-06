@@ -1,0 +1,36 @@
+@media screen and(max-width: 1330px){
+    .container{
+        justify-content: center;
+        gap:5em;
+    }
+
+    .box-part{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:877px){
+    .container{
+        gap:1em;
+        justify-content: center;
+    }
+
+    .box-part{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:719px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box-part{
+        width: 90vw;
+    }
+
+    .content-add{
+        width: 90vw;
+    }
+}
